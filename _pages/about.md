@@ -19,4 +19,4 @@ social: false  # includes social icons at the bottom of the page
 
 Hello!
 
-I am a cognitive science researcher at Johns Hopkins University. 
+I am a cognitive science researcher at Johns Hopkins University. Here is my <a href="https://akazemian.github.io/cv/">CV</a>.
