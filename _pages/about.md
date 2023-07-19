@@ -17,6 +17,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-Hello!
+I’m a cognitive science researcher interested in understanding how brains and machines encode and interpret the world around them. We, as humans, possess the ability to make sense of the world by generalizing across scenes and contexts. On the other hand, current large-scale deep learning models exhibit certain human-like behaviors after training on massive datasets. I’m passionate about studying the specific representations and behavior of these two systems. Doing so can advance our understanding of biological intelligence while supporting the development of more efficient and resilient Artificial Intelligence.
 
-I am a cognitive science researcher at Johns Hopkins University. Here is my <a href="https://akazemian.github.io/cv/">CV</a>.
+Currently, I am a research assistant at the Department of Cognitive Science at Johns Hopkins University, where I’m working with my advisor Dr. Michael Bonner on studying the properties of neural representations in the visual cortex. We do this by taking a computational modeling approach, where we study the properties of neural network models that result in brain-like representations. 
+
+Previously, I worked as a research assistant with Dr. Jason Barton and Dr. Ipek Oruc at the University of British Columbia (UBC) on using deep learning models to study the gaze behavior of individuals with face agnosia. Prior to that, I received my Undergraduate degree from the Integrated Engineering program at UBC, which equipped me with the necessary skills to employ various engineering disciplines in solving real-world problems through building product prototypes.
+
+Outside of academics, I’m passionate about all things nature, painting and learning new skills.
+
+
+Here is my <a href="https://akazemian.github.io/cv/">CV</a>!
