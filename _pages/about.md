@@ -22,7 +22,7 @@ I’m a cognitive science researcher interested in understanding how brains and 
 
 Currently, I am a research assistant at the Department of Cognitive Science at Johns Hopkins University, where I’m working with my advisor <a href="https://cogsci.jhu.edu/directory/michael-bonner/">Dr. Michael Bonner</a> on studying the properties of neural representations in the visual cortex. We do this by taking a computational modeling approach, where we study the properties of neural network models that result in brain-like representations. 
 
-Previously, I worked as a research assistant at the Department of Ophthalmology and Visual Sciences at the University of British Columbia (UBC) on using deep learning models to study the gaze behavior of individuals with face agnosia. Prior to that, I received my Undergraduate degree from the Integrated Engineering program at UBC, which equipped me with the necessary skills to employ various engineering disciplines in solving real-world problems through building product prototypes.
+Previously, I worked as a research assistant at the Department of Ophthalmology and Visual Sciences at the University of British Columbia (UBC) on using deep learning models to study the gaze behavior of individuals with face agnosia. Prior to that, I received my undergraduate degree from the Integrated Engineering program at UBC, which equipped me with the necessary skills to employ various engineering disciplines in solving real-world problems through building product prototypes.
 
 Outside of academics, I’m passionate about all things nature, painting and learning new skills.
 
