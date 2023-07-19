@@ -25,5 +25,8 @@ Previously, I worked as a research assistant at the Department of Ophthalmology 
 
 Outside of academics, I’m passionate about all things nature, painting and learning new skills.
 
-
 Here is my <a href="https://akazemian.github.io/cv/">CV</a>!
+
+
+
+
