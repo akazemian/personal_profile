@@ -17,6 +17,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
+
 I’m a cognitive science researcher interested in understanding how brains and machines encode and interpret the world. We, as humans, possess the ability to make sense of our surroundings by generalizing across scenes and contexts. On the other hand, current large-scale deep learning models exhibit certain human-like behaviors after training on massive datasets. I’m passionate about studying the specific representations and behavior of these two systems. Doing so can advance our understanding of biological intelligence while supporting the development of more efficient and resilient Artificial Intelligence.
 
 Currently, I am a research assistant at the Department of Cognitive Science at Johns Hopkins University, where I’m working with my advisor <a href="https://cogsci.jhu.edu/directory/michael-bonner/">Dr. Michael Bonner</a> on studying the properties of neural representations in the visual cortex. We do this by taking a computational modeling approach, where we study the properties of neural network models that result in brain-like representations. 
@@ -26,6 +27,8 @@ Previously, I worked as a research assistant at the Department of Ophthalmology 
 Outside of academics, I’m passionate about all things nature, painting and learning new skills.
 
 Here is my <a href="https://akazemian.github.io/cv/">CV</a>!
+
+
 
 
 
