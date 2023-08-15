@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+I will be leading a tutorial session on a High Dimensional View of Neuroscience at CCN 2023 along with my colleagues at the Bonner Lab!  
