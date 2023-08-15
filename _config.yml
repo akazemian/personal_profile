@@ -166,17 +166,17 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 collections:
-  news:
-    defaults:
-      layout: post
-    output: True
-    permalink: /news/:path/
+  # news:
+  #   defaults:
+  #     layout: post
+  #   output: True
+  #   permalink: /news/:path/
   projects:
     # output: false
     # permalink: /projects/:path/
 
 announcements:
-  enabled: false
+  enabled: True
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
