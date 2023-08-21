@@ -22,7 +22,7 @@ I’m a cognitive science researcher interested in understanding how brains and 
 
 Currently, I am a research assistant at the Department of Cognitive Science at Johns Hopkins University, where I’m working with my advisor <a href="https://cogsci.jhu.edu/directory/michael-bonner/">Dr. Michael Bonner</a> on studying the properties of neural representations in the visual cortex using a computational modeling approach. 
 
-Prior to this, I received my bachelor's degree from the Integrated Engineering program at UBC.
+Prior to this, I received my bachelor's degree from the Integrated Engineering program at the University of British Columbia.
 
 Outside of academics, I’m passionate about all things nature, playing tennis (though I'm still learning) and trying new things.
 
