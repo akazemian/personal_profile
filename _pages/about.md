@@ -24,7 +24,7 @@ Currently, I am a research assistant at the Department of Cognitive Science at J
 
 Prior to this, I received my bachelor's degree from the Integrated Engineering program at the University of British Columbia.
 
-Here is my <a href="https://akazemian.github.io/cv/">CV</a>!
+Here is my <a href="https://akazemian.github.io/research/CV.pdf">CV</a>!
 
 
 
