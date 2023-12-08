@@ -18,7 +18,7 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 
-I’m a cognitive science researcher interested in understanding how brains and machines encode and process information. Humans possess the ability to seamlessly make sense of a diverse array of visual stimuli, and generalize exisiting knowledege to new situations. On the other hand, current large-scale deep learning models exhibit certain human-like behaviors after training on massive datasets. My passion lies in studying the similarities and differences between the representations and behaviors of these two systems. 
+I’m a cognitive science researcher interested in understanding how brains and machines encode and process information. Humans possess the ability to seamlessly make sense of visual and auditory information, despite the noisy and ambiguous nature of real-world data. They also represent information in a way that enables efficient learning and generalization in new situations. On the other hand, even after training on massive datasets, large-scale deep learning models struggle to achieve human-like performance in simple tasks. My passion lies in studying the representations and algorithms underlying our various cognitive functions, and how they work together to give rise to our fluid intelligence. This endeavor also paves the way for developing general-purpose AI that more closely emulate our intelligent behavior.
 
 Currently, I am a research assistant at the Department of Cognitive Science at Johns Hopkins University, where I’m working with my advisor <a href="https://cogsci.jhu.edu/directory/michael-bonner/">Dr. Michael Bonner</a> on studying the properties of neural representations in the visual cortex using a computational modeling approach. 
 
