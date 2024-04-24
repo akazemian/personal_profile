@@ -5,5 +5,5 @@ inline: True
 related_posts: false
 ---
 
-[April 2024]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I will be starting my PhD in the Fall at Stanford University co-advised by Laura Gwilliams and Dan Yamins! 
+[Apr 2024]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I will be starting my PhD in the Fall at Stanford University co-advised by Laura Gwilliams and Dan Yamins! 
 
