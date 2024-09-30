@@ -26,7 +26,6 @@ Prior to this, I completed my Masters in Cognitive Science at Johns Hopkins Univ
 
 I received my bachelor's degree in Integrated Engineering from the University of British Columbia.
 
-# Here is my <a href="https://akazemian.github.io/research/CV.pdf">CV</a>!
 
 
 
