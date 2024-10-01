@@ -20,7 +20,7 @@ social: false  # includes social icons at the bottom of the page
 
 Hi!
 
-I’m a first year PhD student at Stanford Univesity. I'm interested in how humans understand the world, and how to develop AI that does so more efficeintly. Using our senses, we extract meaningful information from our surroundings with incredible ease and efficiency, despite the high noise level in real world data. We encode this information in such a way that enables learning and generalization in new situations without the need for millions of training examples. I hope to understand these abilities using brain-inspired deep learning models. Currently, I'm working with my advisors <a href="https://lauragwilliams.github.io/">Dr. Laura Gwilliams</a> and <a href="https://stanford.edu/~yamins/">Dr. Dan Yamins</a> on computational models of speech and language. 
+I’m a first year PhD student at Stanford Univesity. I'm interested in how humans process sensory information give rise to higher level concepts and meaning, and to develop AI that emulates this ability more efficiently. Currently, I'm working with my advisors <a href="https://lauragwilliams.github.io/">Dr. Laura Gwilliams</a> and <a href="https://stanford.edu/~yamins/">Dr. Dan Yamins</a> on deep learning models of speech and language. 
 
 Prior to this, I completed my Masters in Cognitive Science at Johns Hopkins University, where I worked with <a href="https://cogsci.jhu.edu/directory/michael-bonner/">Dr. Michael Bonner</a> on understanding the representations and algorithms of primate visual cortex by studying the properties of high dimensional untrained vision models. 
 
