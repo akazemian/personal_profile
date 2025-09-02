@@ -25,4 +25,4 @@ I received my bachelor's degree in Integrated Engineering from the University of
 
 Alongside my academic training, I have held roles as a computer vision engineer and data scientist in both startups and research labs, developing end-to-end pipelines for robotics, eye-tracking, and naturalistic data analysis.
 
-Here is my [CV](personal_profile/assets/pdf/Atlas_Kazemian_CV.pdf)
+Here is my [CV](Atlas_kazemian_CV.pdf)
