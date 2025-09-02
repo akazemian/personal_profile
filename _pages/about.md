@@ -24,7 +24,7 @@ Prior to this, I completed my Masters in Cognitive Science at Johns Hopkins Univ
 
 I received my bachelor's degree in Integrated Engineering from the University of British Columbia.
 
-
+Here is my [CV (PDF)](/assets/pdf/Atlas_Kazemian_CV.pdf)
 
 
 
