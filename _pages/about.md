@@ -23,4 +23,4 @@ Prior to this, I completed my Masters in Cognitive Science at Johns Hopkins Univ
 
 Alongside my academic training, I have held roles as a computer vision engineer and data scientist in both startups and research labs, developing end-to-end pipelines for robotics, eye-tracking, and naturalistic data analysis.
 
-Here is my [CV](Atlas_kazemian_CV.pdf).
+Here is my [CV]({{ '/assets/pdf/Atlas_kazemian_CV.pdf' | relative_url }}).
