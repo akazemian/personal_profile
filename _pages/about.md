@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student, Stanford University | AI. Computational Neuroscience
+subtitle: PhD Student, Stanford University | AI | Computational Neuroscience
 
 
 profile:
