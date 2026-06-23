@@ -1,4 +1,2 @@
 User-agent: *
-Disallow:
-
-Sitemap: https://akazemian.github.io/personal_profile/sitemap.xml
+Disallow: /
