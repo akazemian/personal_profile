@@ -1,14 +1,9 @@
 name: deploy
 
+# NOTE: Automatic deployment is disabled. The site has been taken offline
+# intentionally. To re-enable publishing, restore the `push` / `pull_request`
+# triggers below. For now the workflow only runs when manually dispatched.
 on:
-  push:
-    branches:
-      - master
-      - main
-  pull_request:
-    branches:
-      - master
-      - main
   workflow_dispatch:
 
 permissions:
