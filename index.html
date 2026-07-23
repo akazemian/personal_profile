@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atlas Kazemian</title>
+  <meta name="description" content="Atlas Kazemian — PhD student at Stanford University working on world models for robots and what embodied AI can teach us about the human brain.">
+
+  <meta property="og:title" content="Atlas Kazemian">
+  <meta property="og:description" content="PhD student at Stanford University. World models, embodied AI, computational neuroscience.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://atlaskazemian.com">
+
+  <link rel="stylesheet" href="assets/css/main.css?v=26">
+</head>
+<body>
+
+  <section class="banner">
+    <canvas id="field" role="img"
+            aria-label="A continuous multi-dimensional signal on the left, vector-quantized on the right by snapping each sample to its nearest codebook entry, emitting a sequence of discrete tokens."></canvas>
+
+    <div class="banner-content">
+      <header class="topbar">
+        <a class="wordmark" href="/">AK</a>
+        <nav>
+          <a href="assets/pdf/Atlas_kazemian_CV.pdf">CV</a>
+          <a href="mailto:atlaskaz@stanford.edu">Email</a>
+          <a href="https://scholar.google.com/citations?user=n5cdGdIAAAAJ" target="_blank" rel="noopener">Scholar</a>
+          <a href="https://github.com/akazemian" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/akazemian/" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+      </header>
+
+      <div class="hero">
+        <p class="eyebrow">PhD Candidate at Stanford University</p>
+        <h1>Atlas Kazemian</h1>
+        <p class="lede">World models for robotics and neuroscience</p>
+      </div>
+    </div>
+
+    <div class="ctl">
+      <span class="ctl-label">Codebook size</span>
+      <div class="bitctl bitctl-set" role="group" aria-label="Codebook size">
+        <button type="button" data-k="8">8</button>
+        <button type="button" data-k="16">16</button>
+        <button type="button" data-k="32">32</button>
+        <button type="button" data-k="64" aria-pressed="true">64</button>
+        <button type="button" data-k="128">128</button>
+        <button type="button" data-k="256">256</button>
+        <button type="button" data-k="512">512</button>
+        <button type="button" data-k="1024">1024</button>
+        <button type="button" data-k="2048">2048</button>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <section class="prose">
+      <p>
+        I&rsquo;m a third-year PhD student at Stanford working at the intersection of
+        robotics and neuroscience. My research centers on world models that capture the
+        structure and dynamics of the physical world, primarily as pretraining for
+        generalist robot policies. I&rsquo;m also interested in the application of
+        these models as computational theories of human world knowledge and intelligent behavior.
+      </p>
+      <p>
+        Prior to my PhD, I completed my Master&rsquo;s in Cognitive Science at Johns Hopkins
+        University, where I developed convolutional neural networks
+        to study primate visual representations and algorithms. Before that, I received my
+        bachelor&rsquo;s degree in Integrated Engineering from the University of British Columbia.
+      </p>
+      <p>
+        If you&rsquo;re interested in robotics, computational neuroscience, or the intersection
+        of these fields, <a href="mailto:atlaskaz@stanford.edu">let&rsquo;s connect</a>!
+        If you don&rsquo;t care about any of this and just want to see my cats,
+        <button type="button" class="cat-trigger" data-cats>press here</button>.
+      </p>
+    </section>
+
+    <section class="pubs">
+      <h2 class="section-label">Publications</h2>
+      <ul class="pub-list">
+        <li>
+          <a class="pub-title" href="https://arxiv.org/abs/2509.09737">World modeling with probabilistic structure integration</a>
+          <p class="pub-meta">K. Kotar, W. Lee, R. Venkatesh, H. Chen, D. Bear, &hellip; <strong>A. Kazemian</strong>, et al. &middot; arXiv preprint, 2025</p>
+        </li>
+        <li>
+          <a class="pub-title" href="https://www.nature.com/articles/s42256-025-01142-3">Convolutional architectures are cortex-aligned de novo</a>
+          <p class="pub-meta"><strong>A. Kazemian</strong>, E. Elmoznino, M. F. Bonner &middot; Nature Machine Intelligence, 2025</p>
+        </li>
+        <li>
+          <a class="pub-title" href="https://doi.org/10.64898/2026.05.13.724774">Distinct yet neighboring neural populations encode past, future, and surrounding speech context in the human temporal lobe</a>
+          <p class="pub-meta">M. de Heer Kloots, <strong>A. Kazemian</strong>, W. Turner, J. Parvizi, L. Gwilliams &middot; bioRxiv, 2026 (submitted)</p>
+        </li>
+        <li>
+          <a class="pub-title" href="https://2025.ccneuro.org/abstract_pdf/Kazemian_2025_Intracranial_EEG_reveals_multiplexed_encoding_auditory.pdf">Intracranial EEG reveals multiplexed encoding of auditory, speech, and language embeddings in the human temporal lobe</a>
+          <p class="pub-meta"><strong>A. Kazemian</strong>, J. Parvizi, D. K. Yamins, L. Gwilliams &middot; CCN, 2025</p>
+        </li>
+        <li>
+          <a class="pub-title" href="https://doi.org/10.3389/fneur.2025.1616509">Scanning faces: a deep learning approach to studying eye movements in prosopagnosia</a>
+          <p class="pub-meta"><strong>A. Kazemian</strong>, I. Oruc, J. J. S. Barton &middot; Frontiers in Neurology, 2025</p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="colophon">Atlas Kazemian &mdash; Stanford, CA</p>
+  </footer>
+
+  <script src="assets/js/two-systems.js?v=15"></script>
+  <script src="assets/js/cats.js?v=2"></script>
+</body>
+</html>

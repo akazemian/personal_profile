@@ -1,0 +1,450 @@
+/* ============================================================
+   Atlas Kazemian — personal site
+   Concept: "World → Model" — one signal, continuous then quantized
+   Palette: ink on warm paper, subtle gray traces
+   ============================================================ */
+
+:root {
+  --paper:      #f7f4ec;
+  --paper-deep: #f0ece1;
+  --ink:        #16181c;
+  --ink-soft:   #3d4148;
+  --muted:      #7a7e86;
+  --rule:       #e3e0d7;
+
+  --accent:     #3d5a80;  /* cool blue — the "model" side / active control */
+
+  --sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+
+  --measure: 34rem;
+  --gutter: clamp(1.5rem, 5vw, 5rem);
+  --wrap: 62rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.prose a, .news a {
+  border-bottom: 1px solid var(--rule);
+  transition: border-color .2s ease, color .2s ease;
+}
+.prose a:hover, .news a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- the banner ---------- */
+
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: clamp(420px, 66vh, 640px);
+  display: flex;
+  background: var(--paper);
+}
+
+.banner canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* let the mesh dissolve softly into the paper at the edges */
+  -webkit-mask-image: radial-gradient(125% 115% at 50% 42%, #000 58%, transparent 100%);
+          mask-image: radial-gradient(125% 115% at 50% 42%, #000 58%, transparent 100%);
+}
+
+/* left/right orientation labels, deliberately quiet */
+.banner .edge {
+  position: absolute;
+  bottom: 1.1rem;
+  z-index: 1;
+  font-family: var(--mono);
+  font-size: .58rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: .5;
+  pointer-events: none;
+}
+.banner .edge--l { left: var(--gutter); }
+.banner .edge--r { right: var(--gutter); }
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- topbar (inside banner) ---------- */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.75rem 0;
+  font-family: var(--mono);
+  font-size: .75rem;
+  letter-spacing: .1em;
+}
+
+.wordmark { font-weight: 600; letter-spacing: .2em; }
+
+.topbar nav { display: flex; gap: 1.75rem; }
+.topbar nav a { color: var(--muted); transition: color .2s ease; }
+.topbar nav a:hover { color: var(--ink); }
+
+/* ---------- hero (inside banner) ---------- */
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2.5rem, 8vh, 5rem) 0 clamp(3.5rem, 11vh, 6rem);
+}
+
+/* subtle paper halo keeps the name crisp over the traces */
+.hero .eyebrow,
+.hero h1,
+.hero .lede { text-shadow: 0 1px 16px var(--paper), 0 1px 3px var(--paper); }
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.hero h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.4rem, 8vw, 5.25rem);
+  line-height: 1.02;
+  font-weight: 500;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
+
+.lede {
+  max-width: 30rem;
+  margin: 0;
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  line-height: 1.5;
+  color: var(--ink-soft);
+  text-wrap: balance;
+}
+
+/* ---------- control bar (below banner) ---------- */
+
+.labbar {
+  background: var(--paper);
+}
+
+.labbar-inner {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: .85rem var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .9rem 2rem;
+  flex-wrap: wrap;
+}
+
+/* --- codebook-size control --- */
+
+.ctl {
+  position: absolute;
+  right: var(--gutter);
+  bottom: 1.15rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: .35rem;
+  text-align: right;
+  /* keep it legible where faint traces pass behind */
+  text-shadow: 0 1px 10px var(--paper), 0 1px 2px var(--paper);
+}
+
+.ctl-label {
+  font-family: var(--mono);
+  font-size: .54rem;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: .85;
+}
+
+.bitctl {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  font-family: var(--mono);
+}
+
+.bitctl-end {
+  font-size: .6rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.bitctl-set {
+  display: flex;
+  align-items: baseline;
+  gap: .8rem;
+}
+
+.bitctl-set button {
+  appearance: none;
+  border: 0;
+  padding: .1rem 0;
+  background: none;
+  color: var(--muted);
+  opacity: .5;
+  font-family: var(--mono);
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .02em;
+  cursor: pointer;
+  transition: color .16s ease, opacity .16s ease;
+}
+
+.bitctl-set button:hover { color: var(--ink-soft); opacity: 1; }
+.bitctl-set button:focus-visible {
+  outline: none;
+  color: var(--ink);
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* selected = darker, heavier — no color, just weight */
+.bitctl-set button[aria-pressed="true"] {
+  color: var(--ink);
+  opacity: 1;
+  font-weight: 700;
+}
+
+/* --- equation readout --- */
+
+.eqn {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem 1.25rem;
+  flex-wrap: wrap;
+  font-family: var(--mono);
+}
+
+.eqn-formula { font-size: .92rem; color: var(--ink); letter-spacing: .01em; }
+.eqn-formula .q   { font-style: italic; color: var(--accent); }
+.eqn-formula .sym { font-style: italic; color: var(--accent); }
+.eqn-formula sup, .eqn-formula sub { font-size: .7em; }
+.eqn-formula .dim {
+  color: var(--muted);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-size: .66rem;
+}
+
+.eqn-readout { font-family: var(--mono); font-size: .76rem; letter-spacing: .04em; color: var(--muted); }
+.eqn-readout b { color: var(--ink-soft); font-weight: 600; }
+.eqn-readout .sym { color: var(--accent); }
+.eqn-readout .mid { margin: 0 .3rem; opacity: .5; }
+
+/* ---------- shared content ---------- */
+
+main { padding: 0 var(--gutter); }
+
+.prose, .news { max-width: var(--wrap); margin: 0 auto; }
+
+.section-label {
+  font-family: var(--mono);
+  font-size: .7rem;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 1.75rem;
+  padding-bottom: .75rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ---------- prose ---------- */
+
+.prose { padding: clamp(3.5rem, 10vh, 6.5rem) 0 0; }
+
+.prose p {
+  max-width: var(--measure);
+  margin: 0 0 1.35rem;
+  color: var(--ink-soft);
+  text-wrap: pretty;
+}
+
+/* ---------- publications ---------- */
+
+.pubs {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: clamp(3rem, 9vh, 6rem) 0 clamp(4rem, 10vh, 7rem);
+}
+
+.pub-list { list-style: none; margin: 0; padding: 0; }
+
+.pub-list li {
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.pub-list li:first-child { padding-top: 0; }
+
+.pub-title {
+  font-size: 1.02rem;
+  line-height: 1.4;
+  color: var(--ink);
+  border-bottom: 1px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+.pub-title:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+.pub-meta {
+  margin: .4rem 0 0;
+  font-size: .88rem;
+  line-height: 1.5;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+.pub-meta strong { color: var(--ink-soft); font-weight: 600; }
+
+/* ---------- news ---------- */
+
+.news { padding: clamp(3rem, 9vh, 6rem) 0 clamp(4rem, 10vh, 7rem); }
+
+.news-list { list-style: none; margin: 0; padding: 0; }
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 1.5rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.news-list li:first-child { padding-top: 0; }
+
+.news-list time {
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: .28rem;
+}
+
+.news-list p { margin: 0; max-width: var(--measure); color: var(--ink-soft); text-wrap: pretty; }
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem var(--gutter) 3rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  color: var(--muted);
+}
+
+.colophon { margin: 0; }
+.footer-links { display: flex; gap: 1.75rem; }
+.footer-links a { transition: color .2s ease; }
+.footer-links a:hover { color: var(--ink); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 720px) {
+  .banner { min-height: clamp(380px, 78vh, 560px); }
+  /* drop the 5 nav links to their own line so they never overflow */
+  .topbar { flex-wrap: wrap; }
+  .topbar nav { flex: 0 0 100%; flex-wrap: wrap; justify-content: flex-end; gap: .5rem 1.1rem; }
+  /* full-width at the base of the banner, left-aligned, wrapping if needed */
+  .ctl { left: var(--gutter); align-items: flex-start; text-align: left; }
+  .bitctl-set { flex-wrap: wrap; gap: .5rem .75rem; }
+  .news-list li { grid-template-columns: 1fr; gap: .4rem; }
+  .news-list time { padding-top: 0; }
+}
+
+/* ---------- cat rain ---------- */
+
+/* inline trigger, styled to match a prose link */
+.cat-trigger {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border-bottom: 1px solid var(--rule);
+  transition: color .2s ease, border-color .2s ease;
+}
+.cat-trigger:hover { color: var(--bio, #b0503a); border-bottom-color: currentColor; }
+
+.cat-rain {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1;
+  user-select: none;
+  will-change: transform;
+}
+.cat img {
+  display: block;
+  width: auto;
+  filter: drop-shadow(0 6px 12px rgba(22, 24, 28, .28));
+}
+
+/* ---------- motion preference ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  /* the cat animation is JS-driven and honors reduced motion itself */
+  *:not(.cat) { animation: none !important; transition: none !important; }
+}
